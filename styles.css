@@ -1,0 +1,17 @@
+header button{
+    border: 1px;
+    background-color: #172554;
+    border-radius: 9999px;
+    width: 5px;
+    height: 5px;
+    display: none;
+}
+@media (min-width: 1024px) {
+    header button {
+        display: block;
+    }
+    header nav {
+        font-size: 20px;
+    }
+    
+}
