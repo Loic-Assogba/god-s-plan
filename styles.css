@@ -1,0 +1,156 @@
+header button{
+    border: 1px;
+    background-color: #172554;
+    border-radius: 9999px;
+    width: 5px;
+    height: 5px;
+    display: none;
+}
+h1 {
+    text-decoration: underline;
+    color: #144798;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+h2 {
+    text-decoration: underline;
+    color: #144798;
+    font-weight: 600;
+    margin: 20px 0;
+}
+h3 {
+    text-decoration: underline;
+    color: #1D5929; 
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.form{
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+}
+p {
+    font-weight: 600;
+}
+.par{
+   font-weight: 600;
+   margin: 20px 0;
+}
+summary {
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 18px;
+    color: #EA571C;
+}
+.deux button{
+    border: solid 1px #144798;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+details article {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+details article div {
+    display: flex;
+    flex-direction: column; 
+     gap: 10px;
+}
+details article div img {
+ border-radius: 20px;
+ width: 100%;
+ height: 250px;
+}
+  @media (min-width: 768px) {
+    header nav {
+        font-size: 15px;
+    }
+    .intro{
+        gap: 50px;
+    }
+    .form{
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+}
+
+    
+}
+@media (min-width: 1024px) {
+    header button {
+        display: block;
+    }
+    header nav {
+        font-size: 20px;
+    }
+    .form{
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+}
+.intro{
+        flex-direction: row;
+        gap: 50px;
+    }
+    details article {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+}
+details article div {
+    display: flex;
+    flex-direction: column; 
+     gap: 10px;
+}
+.deux button{
+ padding: 100px 10px;
+}
+    
+}
+@media (min-width: 1440px) {
+    header button {
+        display: block;
+    }
+    header nav {
+        font-size: 20px;
+    }
+    .form{
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+}
+.intro{
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+    }
+    details article {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+}
+details article div {
+    display: flex;
+    flex-direction: row; 
+     gap: 10px;
+}
+details article div img {
+   height: 600px;
+   width: 600px;
+}
+    
+}
