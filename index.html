@@ -1,182 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>God's Plan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body style="font-family: 'Montserrat', sans-serif;" class="bg-white text-blue-950">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>God's Plan</title>
 
-    <header class="flex justify-between border-2 border-blue-800 text-blue-800 font-semibold rounded-2xl bg-white p-3 m-4 ">
+        <script src="https://cdn.tailwindcss.com"></script>
 
-        <div>
-             <img src="icons/LOGO .png" alt="Logo" class="w-8 h-8">
-        </div>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-        <div class="block md:hidden">
-             <a href="#"><img src="icons/menu-wide.svg" alt="menu" class="bg-blue-800 rounded-full p-1"></a>
-        </div>
+        <style>
+            body {
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
+    </head>
 
-        <nav class="hidden md:flex space-x-5">
-             <a href="#">Accueil_</a>
-             <a href="#">A propos</a>
-             <a href="#"><img src="icons/menu-wide.svg" alt="menu" class="bg-blue-800 rounded-full p-1"></a>
-        </nav>
+    <body class="bg-white text-blue-950 overflow-x-hidden">
+        <!-- HEADER -->
+        <header class="px-4 py-4">
+            <div
+                class="max-w-7xl mx-auto border-2 border-blue-800 rounded-2xl bg-white px-4 py-3"
+            >
+                <div class="flex items-center justify-between">
+                    <!-- LOGO -->
+                    <div class="flex items-center gap-3">
+                        <img
+                            src="icons/LOGO .png"
+                            alt="Logo"
+                            class="w-10 h-10 object-contain"
+                        />
+                    </div>
 
-    </header>
-    
-    <section class="text-center ">
+                    <!-- MENU DESKTOP -->
+                    <nav
+                        class="hidden md:flex items-center gap-8 text-blue-800 font-semibold"
+                    >
+                        <a href="#" class="hover:text-blue-500 transition">
+                            Accueil
+                        </a>
 
-        <h1 class="text-blue-800 text-4xl md:text-6xl m-8 font-bold mb-6">
-            Présentation du centre 
-        </h1>
+                        <a href="#" class="hover:text-blue-500 transition">
+                            À propos
+                        </a>
 
-        <p class="p-1  font-medium">
-             Le <strong>Centre Privé de Formation Professionnel et d'Apprentissage GOD'S PLAN (CPFPA GOD'S PLAN)</strong> est un centre privé dédié à l'excellence,
-             à l'innovation et à la formation pratique. Implanté dans une vision de transformation et d'autonomisation, le centre vise à équiper les jeunes et les adultes
-             avec des compétences concrètes, actuelles et adaptées aux besoins du marché du travail local et international. <br><br>
-             Chez GOD'S PLAN, chaque formation est pensée comme un tremplin vers un avenir meilleur. Nous croyons que chaque individu a un potentiel
-             extraordinaire, et notre mission est de l'activer à travers un encadrement de qualité, des équipements adaptés, et une pédagogie basée sur la pratique et la
-             valorisation des talents. <br><br>
-             Le centre offre un environnement accueillant, dynamique et inspirant, où les apprenants sont encouragés à exceller, à entreprendre et à contribuer
-             positivement à la société. Nos formations sont axées sur le savoir-faire, le savoir-être, et la foi en soi-même comme moteur de réussite.
-        </p>
-                     <br>
-    </section>
+                        <a href="#" class="hover:text-blue-500 transition">
+                            Formations
+                        </a>
 
-    <section class="text-center p-1">
+                        <a href="#">
+                            <img
+                                src="icons/menu-wide.svg"
+                                alt="menu"
+                                class="bg-blue-800 rounded-full p-2 w-10 h-10"
+                            />
+                        </a>
+                    </nav>
 
-        <h2 class="text-blue-800 text-4xl p-2 md:text-5xl font-bold ">
-            Notre Vision 
-        </h2>
-
-        <p>
-            <ul class="list-disc text-cen m-6">
-                <li>
-                    Former et accompagner les apprenants vers l'excellence dans les
-                    métiers d'avenir
-                </li>
-
-                <li>
-                    Devenir une référence en formation professionnelle et en
-                    apprentissage au Bénin et dans la sous-région, grâce à des cursus
-                    innovants et accessibles. 
-                </li>
-
-                <li>
-                    Être un acteur majeur dans la création d'emploi et l'insertion
-                    professionnelle des jeunes.
-                </li>
-
-                <li>
-                    Contribuer à la diminution du chômage au Bénin et dans la sousrégion 
-                    par le biais de compétences solides et adaptées à la demande du marché.
-                </li>
-            </ul>
-        </p>
-    </section>
-
-    <section class="text-center">
-
-        <h2 class="text-blue-800 text-4xl p-2 md:text-5xl font-bold ">
-            Nos Formations Phares 
-        </h2>
-
-        <ul class="list-disc m-2 p-4">
-            <li class="p-2">
-                <strong class="text-xl md:text-2xl text-blue-800"> Graphisme-Sérigraphie</strong> <br><br>
-                <p>
-                    <strong>Contenu de la formation :</strong> Initiation en informatique, les bases et principes du design
-                    graphique, typographie et théorie des couleurs, conception d'une identité visuelle, sérigraphie
-                    manuelle digitale et personnalisation.
-                </p>
-            </li>
-
-            <li class="p-2">
-                <strong class="text-xl md:text-2xl text-blue-800">Photographie & Design Graphique</strong> <br><br>
-                <p>
-                    <strong>Contenu de la formation :</strong>  Prise de vue, gestion de lumière, retouche photo et réalisation de
-                    visuels, flyers, cartes de visite, bannières web, miniature. 
-                </p>
-            </li>
-            
-            <li class="p-2">
-                <strong class="text-xl md:text-2xl text-blue-800"> Photographie - Audiovisuel - Graphisme</strong> <br><br>
-                <p>
-                    <strong>Contenu de la formation :</strong> Cadrage et Montage, Prise de vue (Maitrise de l'enregistrement
-                    sonore, le traitement des audios) 
-                </p>
-            </li>
-
-            <li class="p-2">
-                <strong class="text-xl md:text-2xl text-blue-800">Make-up, Onglerie, Nouage de foulard</strong> <br><br>
-                <p>
-                    <strong>Contenu de la formation :</strong> Maquillage, pédicure, manicure, attache foulard
-                </p>
-            </li>
-
-            <li class="p-2">
-                <strong class="text-xl md:text-2xl text-blue-800"> Secrétariat bureautique </strong> <br> <br>
-                <p>
-                    <strong>Contenu de la formation :</strong> Initiation en informatique, rédaction et mise en forme des
-                    documents administratifs, classement et archivage physique et numérique, tenue d'agenda et
-                    gestion du temps, organisation des réunions et rédaction des comptes rendus, tenue du standard
-                    et accueil téléphonique
-                </p>
-            </li>
-
-        </ul>
-    </section>
-
-    <section class=" bg-blue-100 rounded-xl m-1">
-
-        <div class="p-6 flex justify-center  space-x-6">
-                            
-        <button class="bg-blue-800 text-white rounded-full p-2 ">
-             S'inscrire
-        </button>
-
-        <button class="bg-blue-800 text-white rounded-full p-2">
-             Nous contacter
-        </button>
-
-        </div>
-
-        <div>
-
-            <div class="md:flex">
-                 <img src="image/whatsapp-1.jpeg" alt="image" class="rounded-xl p-2 md:w-1/2 h-1/2">
-                 <img src="image/whatsapp-2.jpeg" alt="image" class="rounded-xl p-2 md:w-1/2 h-1/2">
+                    <!-- MENU MOBILE -->
+                    <button class="md:hidden">
+                        <img
+                            src="icons/menu-wide.svg"
+                            alt="menu"
+                            class="bg-blue-800 rounded-full p-2 w-10 h-10"
+                        />
+                    </button>
+                </div>
             </div>
+        </header>
 
-              <div class="md:flex">
-                 <img src="image/whatsapp-3.jpeg" alt="image" class="rounded-xl p-2 md:w-1/2 h-1/2">
-                 <img src="image/WhatsApp-9.jpeg" alt="image" class="rounded-xl p-2 md:w-1/2 h-1/2">
-              </div>
+        <!-- HERO -->
+        <section class="px-4 py-10">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1
+                    class="text-blue-800 text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-8"
+                >
+                    Présentation du centre
+                </h1>
+
+                <p
+                    class="text-base md:text-lg leading-8 font-medium text-justify md:text-center"
+                >
+                    Le
+                    <strong
+                        >Centre Privé de Formation Professionnel et
+                        d'Apprentissage GOD'S PLAN (CPFPA GOD'S PLAN)</strong
+                    >
+                    est un centre privé dédié à l'excellence, à l'innovation et
+                    à la formation pratique. Implanté dans une vision de
+                    transformation et d'autonomisation, le centre vise à équiper
+                    les jeunes et les adultes avec des compétences concrètes,
+                    actuelles et adaptées aux besoins du marché du travail local
+                    et international.
+
+                    <br /><br />
+
+                    Chez GOD'S PLAN, chaque formation est pensée comme un
+                    tremplin vers un avenir meilleur. Nous croyons que chaque
+                    individu a un potentiel extraordinaire, et notre mission est
+                    de l'activer à travers un encadrement de qualité, des
+                    équipements adaptés, et une pédagogie basée sur la pratique
+                    et la valorisation des talents.
+
+                    <br /><br />
+
+                    Le centre offre un environnement accueillant, dynamique et
+                    inspirant, où les apprenants sont encouragés à exceller, à
+                    entreprendre et à contribuer positivement à la société. Nos
+                    formations sont axées sur le savoir-faire, le savoir-être,
+                    et la foi en soi-même comme moteur de réussite.
+                </p>
             </div>
-    </section>
+        </section>
 
-    <footer class="bg-blue-950 text-white">
+        <!-- VISION -->
+        <section class="px-4 py-10 bg-blue-50">
+            <div class="max-w-5xl mx-auto">
+                <h2
+                    class="text-blue-800 text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10"
+                >
+                    Notre Vision
+                </h2>
 
-        <h2 class="font-semibold text-lg text-center pt-2">
-            Suivez-nous sur :
-        </h2>
+                <ul
+                    class="space-y-6 list-disc pl-6 text-base md:text-lg leading-8"
+                >
+                    <li>
+                        Former et accompagner les apprenants vers l'excellence
+                        dans les métiers d'avenir.
+                    </li>
 
-        <div class="flex justify-center space-x-4 p-2">
-             <a href="#"><img src="icons/Facebook-Logo-1--Streamline-Flex.png" alt="" class="block h-8"></a>
-             <a href="#"><img src="icons/Telegram--Streamline-Ios-14.png" alt="" class="h-8"></a>
-             <a href="#"><img src="icons/Twitter-2--Streamline-Ios-14.png" alt="" class="h-8"></a>
-             <a href="#"><img src="icons/Whatsapp--Streamline-Ios-14.png" alt="" class="h-8"></a>
-        </div>
+                    <li>
+                        Devenir une référence en formation professionnelle et en
+                        apprentissage au Bénin et dans la sous-région, grâce à
+                        des cursus innovants et accessibles.
+                    </li>
 
-        <h3 class="bg-blue-950 text-center p-2 font-medium">
-            Réalisée par Loïc ASSOGBA <br> Dans le cadre d'un TP à FuturCraft Institut
-        </h3>
+                    <li>
+                        Être un acteur majeur dans la création d'emploi et
+                        l'insertion professionnelle des jeunes.
+                    </li>
 
-    </footer>
-    
-</body>
+                    <li>
+                        Contribuer à la diminution du chômage au Bénin et dans
+                        la sous-région grâce à des compétences solides et
+                        adaptées au marché.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FORMATIONS -->
+        <section class="px-4 py-12">
+            <div class="max-w-7xl mx-auto">
+                <h2
+                    class="text-blue-800 text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12"
+                >
+                    Nos Formations Phares
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- CARD -->
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow-sm">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            Graphisme - Sérigraphie
+                        </h3>
+
+                        <p class="leading-7">
+                            <strong>Contenu :</strong>
+                            Initiation en informatique, bases du design
+                            graphique, typographie, théorie des couleurs,
+                            identité visuelle, sérigraphie manuelle et digitale.
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow-sm">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            Photographie & Design Graphique
+                        </h3>
+
+                        <p class="leading-7">
+                            <strong>Contenu :</strong>
+                            Prise de vue, gestion de lumière, retouche photo,
+                            création de flyers, cartes de visite, bannières web
+                            et miniatures.
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow-sm">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            Photographie - Audiovisuel - Graphisme
+                        </h3>
+
+                        <p class="leading-7">
+                            <strong>Contenu :</strong>
+                            Cadrage, montage vidéo, prise de vue, maîtrise de
+                            l'enregistrement sonore et traitement audio.
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow-sm">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            Make-up, Onglerie, Nouage de foulard
+                        </h3>
+
+                        <p class="leading-7">
+                            <strong>Contenu :</strong>
+                            Maquillage, pédicure, manucure et attache de
+                            foulard.
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div
+                        class="bg-blue-50 rounded-2xl p-6 shadow-sm md:col-span-2"
+                    >
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            Secrétariat bureautique
+                        </h3>
+
+                        <p class="leading-7">
+                            <strong>Contenu :</strong>
+                            Initiation en informatique, rédaction
+                            administrative, classement, archivage, gestion
+                            d'agenda, organisation des réunions et accueil
+                            téléphonique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA + IMAGES -->
+        <section class="px-4 py-12">
+            <div class="max-w-7xl mx-auto bg-blue-100 rounded-3xl p-6 md:p-10">
+                <!-- BUTTONS -->
+                <div
+                    class="flex flex-col sm:flex-row justify-center gap-4 mb-10"
+                >
+                    <button
+                        class="bg-blue-800 hover:bg-blue-700 transition text-white px-8 py-3 rounded-full font-semibold"
+                    >
+                        S'inscrire
+                    </button>
+
+                    <button
+                        class="bg-blue-800 hover:bg-blue-700 transition text-white px-8 py-3 rounded-full font-semibold"
+                    >
+                        Nous contacter
+                    </button>
+                </div>
+
+                <!-- IMAGES -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <img
+                        src="image/whatsapp-1.jpeg"
+                        alt="Formation"
+                        class="rounded-2xl w-full h-[250px] md:h-[320px] object-cover"
+                    />
+
+                    <img
+                        src="image/whatsapp-2.jpeg"
+                        alt="Formation"
+                        class="rounded-2xl w-full h-[250px] md:h-[320px] object-cover"
+                    />
+
+                    <img
+                        src="image/whatsapp-3.jpeg"
+                        alt="Formation"
+                        class="rounded-2xl w-full h-[250px] md:h-[320px] object-cover"
+                    />
+
+                    <img
+                        src="image/WhatsApp-9.jpeg"
+                        alt="Formation"
+                        class="rounded-2xl w-full h-[250px] md:h-[320px] object-cover"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-blue-950 text-white px-4 py-10">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="font-semibold text-xl text-center mb-6">
+                    Suivez-nous sur :
+                </h2>
+
+                <!-- SOCIAL -->
+                <div class="flex justify-center flex-wrap gap-5 mb-8">
+                    <a href="#">
+                        <img
+                            src="icons/Facebook-Logo-1--Streamline-Flex.png"
+                            alt="Facebook"
+                            class="w-10 h-10 object-contain"
+                        />
+                    </a>
+
+                    <a href="#">
+                        <img
+                            src="icons/Telegram--Streamline-Ios-14.png"
+                            alt="Telegram"
+                            class="w-10 h-10 object-contain"
+                        />
+                    </a>
+
+                    <a href="#">
+                        <img
+                            src="icons/Twitter-2--Streamline-Ios-14.png"
+                            alt="Twitter"
+                            class="w-10 h-10 object-contain"
+                        />
+                    </a>
+
+                    <a href="#">
+                        <img
+                            src="icons/Whatsapp--Streamline-Ios-14.png"
+                            alt="Whatsapp"
+                            class="w-10 h-10 object-contain"
+                        />
+                    </a>
+                </div>
+
+                <!-- COPYRIGHT -->
+                <div class="text-center text-sm md:text-base leading-7">
+                    <p>Réalisée par Loïc ASSOGBA</p>
+
+                    <p>Dans le cadre d'un TP à FuturCraft Institut</p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
